@@ -4,7 +4,7 @@
 ###### by Taylor Delph
 
 ## **Project Description**
-An API that lists local restaurants and shops. Search the api by a restaurant or shop name, price point, location, food, or items sold.
+A queryable API that lists local restaurants and shops. Search the api by a restaurant or shop name, price point, location, food, or items sold.
 
 ### Required for Use
 <details>
