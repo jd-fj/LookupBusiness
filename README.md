@@ -1,6 +1,6 @@
 # 📍 Local Business Lookup API
 <div align="center">
-<img src="https://github.com/taylulz.png" width="200px" height="auto" style="border-radius:50%">
+<img src="https://github.com/taylulz.png" width="200px" height="auto" style="border-radius:100px">
 </div>
 
 ### A custom API that lists local restaurants and shops
