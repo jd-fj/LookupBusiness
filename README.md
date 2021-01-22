@@ -1,7 +1,4 @@
 # 📍 Local Business Lookup API
-<div align="center">
-<img src="https://github.com/taylulz.png" width="200px" height="auto" style="border-radius:100px">
-</div>
 
 ### A custom API that lists local restaurants and shops
 ###### by Taylor Delph
@@ -39,7 +36,7 @@ An API that lists local restaurants and shops. Search the api by a restaurant or
 3. Once cloned, type into the terminal `$ cd LookupBusiness.Solution/LookupBusiness` to navigate to the root directory.
 * Enter `$ dotnet restore`
 
-### AppSettings.Json
+AppSettings.Json
 * Create a file in root directory `appsettings.json`
 * Copy and paste the following snippet to the file (if you used your own password, replace 'epicodus' with the one you've set)
 
@@ -60,13 +57,13 @@ Import Database using Entity Framework Core
 * Navigate to LookupBusiness.Solution/LookupBusiness and type `dotnet ef database update` into the terminal. This will update the existing migrations
 
 Launch the API
-1. Navigate to LookupBusiness.Solution/LookupBusiness and type `dotnet run` into the terminal.
+* Navigate to LookupBusiness.Solution/LookupBusiness and type `dotnet run` into the terminal.
 
 ## API Documentation
 Explore the API endpoints with Swagger Documentation:
 * After launching the API, use a browser to navigate to `http://localhost:5000/swagger/`
 
-## Endpoints
+### **Endpoints**
 Base URL: `http://localhost:5000`
 
 Http Request Structure
