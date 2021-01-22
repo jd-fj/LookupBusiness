@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 namespace LookupBusiness.Controllers
 {
   [ApiVersion("1.0")]
-  [Route("api/Shops")]
+  [Route("api/shops")]
   [ApiController]
   public class ShopsV1Controller : ControllerBase
   {
@@ -56,6 +56,26 @@ namespace LookupBusiness.Controllers
       var shopToDelete = _db.Shops.FirstOrDefault(entry => entry.ShopId == id);
       _db.Shops.Remove(shopToDelete);
       _db.SaveChanges();
+    }
+  }
+
+  [ApiVersion("2.0")]
+  [Route("api/{v:ApiVersion}/shops")]
+  [ApiController]
+  public class ShopsV2Controller : ControllerBase
+  {
+    private LookupBusinessContext _db;
+
+    public ShopsV2Controller(LookupBusinessContext db)
+    {
+      _db = db;
+    }
+
+    // GET api/Shops
+    [HttpGet]
+    public ActionResult<IEnumerable<Shop>> Get()
+    {
+      return _db.Shops.ToList();
     }
   }
 }
