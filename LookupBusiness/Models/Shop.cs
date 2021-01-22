@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace LookupBusiness.Models
 {
   public class Shop
