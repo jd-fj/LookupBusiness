@@ -58,4 +58,24 @@ namespace LookupBusiness.Controllers
       _db.SaveChanges();
     }
   }
+
+  [ApiVersion("2.0")]
+  [Route("api/{v:ApiVersion}/restaurants")]
+  [ApiController]
+  public class RestaurantsV2Controller : ControllerBase
+  {
+    private LookupBusinessContext _db;
+
+    public RestaurantsV2Controller(LookupBusinessContext db)
+    {
+      _db = db;
+    }
+
+    // GET api/restaurants
+    [HttpGet]
+    public ActionResult<IEnumerable<Restaurant>> Get()
+    {
+      return _db.Restaurants.ToList();
+    }
+  }
 }
