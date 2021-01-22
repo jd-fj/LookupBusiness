@@ -73,9 +73,28 @@ namespace LookupBusiness.Controllers
 
     // GET api/restaurants
     [HttpGet]
-    public ActionResult<IEnumerable<Restaurant>> Get()
+    public ActionResult<IEnumerable<Restaurant>> Get(string name, string offerings, string nearestIntersection, int pricing)
     {
-      return _db.Restaurants.ToList();
+      var query = _db.Restaurants.AsQueryable();
+
+      if(name != null)
+      {
+        query = query.Where(entry => entry.Name == name);
+      }
+      if(offerings != null)
+      {
+        query = query.Where(entry => entry.Offerings == offerings);
+      }
+      if(nearestIntersection != null)
+      {
+        query = query.Where(entry => entry.NearestIntersection == nearestIntersection);
+      }
+      if(pricing != 0)
+      {
+        query = query.Where(entry => entry.Pricing == pricing);
+      }
+
+      return query.ToList();
     }
   }
 }
