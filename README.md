@@ -90,7 +90,7 @@ DELETE /api/restaurants/{id}
 #### Path Parameters
 | Parameter | Type | Default | Required | Description |
 | :---: | :---: | :---: | :---: | --- |
-| RestaurantId | string | none | true | return matches by restaurant id.|
+| RestaurantId | int | none | true | return matches by restaurant id.|
 | Name | string | none | true | return matches by restaurant name.|
 | Offerings | string | none | true | return restaurants by food offered. |
 | NearestIntersection | string | none | true | return restaurant's nearest crossroads. |
@@ -126,7 +126,7 @@ DELETE /api/shops/{id}
 #### Path Parameters
 | Parameter | Type | Default | Required | Description |
 | :---: | :---: | :---: | :---: | --- |
-| ShopId | string | none | true | return matches by shop id.|
+| ShopId | int | none | true | return matches by shop id.|
 | Name | string | none | true | return matches by shop name.|
 | Offerings | string | none | true | return shop by goods sold. |
 | NearestIntersection | string | none | true | return shop's nearest crossroads. |
