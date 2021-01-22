@@ -9,6 +9,7 @@ namespace LookupBusiness.Models
       {
       }
 
-      
+      public DbSet<Restaurant> Restaurants { get; set; }
+      public DbSet<Shop> Shops { get; set; }
   }
 }
