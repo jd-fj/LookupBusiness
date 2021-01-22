@@ -71,7 +71,6 @@ namespace LookupBusiness.Controllers
       _db = db;
     }
 
-    // GET api/restaurants
     [HttpGet]
     public ActionResult<IEnumerable<Restaurant>> Get(string name, string offerings, string nearestIntersection, int pricing)
     {
