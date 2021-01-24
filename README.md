@@ -33,7 +33,7 @@ A queryable API that lists local restaurants and shops. Search the api by a rest
 ## 🏗️  Setup and Use via cloning
 1. Open your terminal and ensure you are within the directory you'd like the file to be created in.
 2. Enter the following command `$ git clone https://github.com/taylulz/LookupBusiness.Solution.git`
-3. Once cloned, type into the terminal `$ cd LookupBusiness.Solution/LookupBusiness` to navigate to the root directory.
+3. Once cloned, type into the terminal `$ cd LookupBusiness.Solution/APILookupBusiness` to navigate to the root directory.
 * Enter `$ dotnet restore`
 
 AppSettings.Json
